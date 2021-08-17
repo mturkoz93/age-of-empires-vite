@@ -26,8 +26,23 @@ npm i -D eslint eslint-plugin-vue @vue/eslint-config-typescript @typescript-esli
 
 ```
 
+```
+npm i -D husky lint-staged
+```
+
 ## 3. Prettier
 
 ```
 npm i -D prettier eslint-plugin-prettier @vue/eslint-config-prettier
 ```
+
+## 4. StyleLint
+
+```
+npm i -D stylelint stylelint-config-recommended stylelint-config-standard
+```
+
+## Sources
+
+- https://miyauchi.dev/posts/vite-vue3-typescript/
+- https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/
