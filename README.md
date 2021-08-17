@@ -84,6 +84,10 @@ createApp(App).mount('#app')
 npm install vue-router@4
 ```
 
+## 8. Vuex
+
+npm install vuex@next --save
+
 ## Sources
 
 - https://miyauchi.dev/posts/vite-vue3-typescript/
