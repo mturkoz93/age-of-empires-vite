@@ -1,24 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="app">
+    <h2 style="color: purple; padding: 10px">Hello World!</h2>
+  </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import HelloWorld from './components/HelloWorld.vue'
 
   export default defineComponent({
     name: 'App',
-    components: {
-      HelloWorld,
-    },
+    components: {},
   })
 </script>
 
-<style>
+<style lang="scss">
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  $background: rgb(212, 233, 243);
+  $fullHeight: 100vh;
+
+  .app {
+    background: $background;
+    height: $fullHeight;
+    text-align: center;
   }
 </style>

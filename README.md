@@ -42,6 +42,12 @@ npm i -D prettier eslint-plugin-prettier @vue/eslint-config-prettier
 npm i -D stylelint stylelint-config-recommended stylelint-config-standard
 ```
 
+## 5. Sass
+
+```
+npm install -D sass
+```
+
 ## Sources
 
 - https://miyauchi.dev/posts/vite-vue3-typescript/
