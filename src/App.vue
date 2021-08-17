@@ -5,11 +5,16 @@
     <div>
       <router-view></router-view>
     </div>
+    <div>
+      <input v-model="newName" type="text" @keypress.enter="saveName" />
+      <div>Username: {{ getUserName }}</div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue'
+  import { mapGetters } from 'vuex'
 
   export default defineComponent({
     name: 'App',
@@ -17,7 +22,20 @@
     data() {
       return {
         imageUrl: 'https://tailwindcss.com/img/erin-lindford.jpg',
+        newName: '',
       }
+    },
+    computed: {
+      ...mapGetters({
+        getUserName: 'user/getUserName',
+      }),
+    },
+    methods: {
+      saveName() {
+        // this.$store.dispatch('user/saveName', this.newName)
+        this.$store.dispatch('user/saveName', this.newName)
+        this.newName = ''
+      },
     },
   })
 </script>
