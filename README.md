@@ -78,6 +78,12 @@ import './index.css'
 createApp(App).mount('#app')
 ```
 
+## 7. vue-router
+
+```
+npm install vue-router@4
+```
+
 ## Sources
 
 - https://miyauchi.dev/posts/vite-vue3-typescript/
